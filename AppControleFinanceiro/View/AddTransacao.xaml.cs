@@ -12,4 +12,8 @@ public partial class AddTransacao : ContentPage
         Navigation.PushModalAsync(new ListaDeTransacao());
         
     }
+    private void Toque(object sender, TappedEventArgs e)
+    {
+        Navigation.PopModalAsync();
+    }
 }

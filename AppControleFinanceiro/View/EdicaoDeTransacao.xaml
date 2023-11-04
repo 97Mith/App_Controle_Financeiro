@@ -7,17 +7,22 @@
         <Border BackgroundColor="Black" Stroke="Transparent" Margin="15" Padding="15" StrokeShape="RoundRectangle 30">
             <Grid RowDefinitions="Auto" ColumnDefinitions="*, 30">
                 <Label 
-            Text="Atualizar"
-         
-            HorizontalOptions="Center" 
-            />
+                    Text="Atualizar"
+                    TextColor="White"
+                    HorizontalOptions="Center" 
+                    />
 
-                <Label 
-            Text="X"
-            HorizontalOptions="Center" 
-        
-            Grid.Row="0"
-            Grid.Column="1"/>
+                <Image 
+                    Source="close.png"
+                    WidthRequest="17"
+                    HorizontalOptions="Center" 
+       
+                    Grid.Row="0"
+                    Grid.Column="1">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Toque"/>
+                    </Image.GestureRecognizers>
+                </Image>
             </Grid>
         </Border>
         <Grid ColumnDefinitions="*, *" Margin="30,5">
@@ -30,7 +35,7 @@
         <Button 
             Text="SALVAR" 
             Margin="25" 
-            BackgroundColor="GreenYellow"
+            
             FontAttributes="Bold"
             TextColor="Black"
             CornerRadius="22"

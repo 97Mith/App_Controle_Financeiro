@@ -1,20 +1,79 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppControleFinanceiro.View.ListaDeTransacao"
-             Title="ListaDeTransacao">
+<ContentPage 
+    
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="AppControleFinanceiro.View.ListaDeTransacao"
+    Title="ListaDeTransacao"
+    NavigationPage.HasNavigationBar="False">
 
     <VerticalStackLayout>
-        <Label 
-            Text="Lista de Transações"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <Grid Padding="15" ColumnDefinitions="50, *, Auto">
+            <Label Text="S" VerticalOptions="Center" HorizontalOptions="Center" FontSize="18"/>
+            <VerticalStackLayout Grid.Column="1">
+                <Label Text="Saldo"/>
+                <Label Text="dd/mm/aaaa" TextColor="#BABABA"/>
+            </VerticalStackLayout>
+            <Label Grid.Column="2" VerticalOptions="Center" Text="R$ 3.600,00" TextColor="DarkOliveGreen"/>
+        </Grid>
 
-        <Button 
-            Text="+" 
-            Clicked="IrParaAdicionarTransacao" />
+       
+            
         <Button 
             Text="Editar" 
             Clicked="IrParaEditarTransacao" />
+
+        <Border 
+            Margin="10" 
+            BackgroundColor="Black" 
+            StrokeThickness="0" 
+            Padding="15"
+            StrokeShape="RoundRectangle 30">    
+            <Grid ColumnDefinitions="*, 80" RowDefinitions="Auto, Auto, 30, Auto, Auto">
+                <Label 
+                    Text="Saldo"
+                    FontSize="18"
+                    TextColor="#979797"/>
+                <Label 
+                    Text="R$ 2760,00"
+                    FontSize="36"
+                    TextColor="White"
+                    Grid.Row="1"/>
+                <Button 
+                    Text="+" 
+                    FontSize="48"
+                    WidthRequest="54"
+                    HeightRequest="54"
+                    Grid.Column="1" 
+                    Grid.RowSpan="2"
+                    CornerRadius="30"
+                    HorizontalOptions="Center"
+                    
+                    Clicked="IrParaAdicionarTransacao" />
+
+                <Label Grid.Row="3" 
+                       TextColor="#979797" 
+                       Text="Receitas"
+                       FontSize="8"/>
+                
+                <Label Grid.Row="4" 
+                       TextColor="White" 
+                       Text="R$ 3.600,00"
+                       FontSize="12"/>
+
+                <Label 
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    TextColor="#979797"
+                    Text="Despesas"
+                    FontSize="8"/>
+                <Label 
+                    Grid.Row="4"
+                    Grid.Column="1"
+                    Text="R$ 840,00"
+                    FontSize="12"
+                    TextColor="White"/>
+            </Grid>
+        </Border>
     </VerticalStackLayout>
 </ContentPage>
