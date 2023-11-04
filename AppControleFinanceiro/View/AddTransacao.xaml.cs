@@ -6,4 +6,9 @@ public partial class AddTransacao : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void SalvarEVoltar(object sender, EventArgs e)
+    {
+        App.Current.MainPage = new ListaDeTransacao();
+    }
 }

@@ -12,5 +12,8 @@
         <Button 
             Text="+" 
             Clicked="IrParaAdicionarTransacao" />
+        <Button 
+            Text="Editar" 
+            Clicked="IrParaEditarTransacao" />
     </VerticalStackLayout>
 </ContentPage>

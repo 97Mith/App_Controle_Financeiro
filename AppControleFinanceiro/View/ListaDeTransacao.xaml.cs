@@ -11,4 +11,10 @@ public partial class ListaDeTransacao : ContentPage
 	{
 		App.Current.MainPage = new AddTransacao();
 	}
+
+
+    private void IrParaEditarTransacao(object sender, EventArgs e)
+    {
+        App.Current.MainPage = new EdicaoDeTransacao();
+    }
 }

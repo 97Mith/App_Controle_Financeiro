@@ -27,6 +27,10 @@
         <Entry Placeholder="Nome" Margin="15"/>
         <DatePicker Margin="15"/>
         <Entry Placeholder="Valor" Margin="15"/>
-        <Button Text="Salvar" Margin="25"/>
+        <Button 
+            Text="Salvar" 
+            Margin="25" 
+            HorizontalOptions="Center"
+            Clicked="SalvarEVoltar"/>
     </VerticalStackLayout>
 </ContentPage>
