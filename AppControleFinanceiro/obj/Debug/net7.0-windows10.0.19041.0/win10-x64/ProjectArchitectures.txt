@@ -1,0 +1,1 @@
+C:\Users\matht\source\repos\AppControleFinanceiro\AppControleFinanceiro\AppControleFinanceiro.csproj;x64
