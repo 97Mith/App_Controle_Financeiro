@@ -6,7 +6,7 @@
         {
             InitializeComponent();
 
-            MainPage = new View.ListaDeTransacao();
+            MainPage = new NavigationPage(new View.ListaDeTransacao());
         }
     }
 }

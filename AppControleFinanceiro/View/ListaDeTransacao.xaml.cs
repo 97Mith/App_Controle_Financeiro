@@ -9,12 +9,12 @@ public partial class ListaDeTransacao : ContentPage
 
 	private void IrParaAdicionarTransacao(object sender, EventArgs argumento)
 	{
-		App.Current.MainPage = new AddTransacao();
+		Navigation.PushModalAsync(new AddTransacao());
 	}
 
 
     private void IrParaEditarTransacao(object sender, EventArgs e)
     {
-        App.Current.MainPage = new EdicaoDeTransacao();
+        Navigation.PushModalAsync(new EdicaoDeTransacao());
     }
 }

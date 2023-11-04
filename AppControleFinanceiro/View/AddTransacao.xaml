@@ -28,8 +28,13 @@
         <DatePicker Margin="15"/>
         <Entry Placeholder="Valor" Margin="15"/>
         <Button 
-            Text="Salvar" 
+            Text="SALVAR" 
             Margin="25" 
+            BackgroundColor="GreenYellow"
+            FontAttributes="Bold"
+            TextColor="Black"
+            CornerRadius="22"
+            Padding="30,10"
             HorizontalOptions="Center"
             Clicked="SalvarEVoltar"/>
     </VerticalStackLayout>
