@@ -13,10 +13,14 @@ public partial class AddTransacao : ContentPage
 
     private void SalvarEVoltar(object sender, EventArgs e)
     {
-        if (Validar() == false) { return; }
+        bool deuBoa = Validar();
+        if (!deuBoa) { return; }
 
         SalvarDadosNoDataBase();
 
+        Navigation.PopModalAsync();
+        
+        
     }
 
     private void SalvarDadosNoDataBase()
@@ -29,8 +33,8 @@ public partial class AddTransacao : ContentPage
             Valor = decimal.Parse(EntradaValor.Text)
         };
 
-        var repositorio = this.Handler.MauiContext.Services.GetService<IRepositorioDeTransacao>();
-        repositorio.Add(transacao);
+        var _repositorio = this.Handler.MauiContext.Services.GetService<IRepositorioDeTransacao>();
+        _repositorio.Add(transacao);
     }
 
     private void Toque(object sender, TappedEventArgs e)
@@ -61,8 +65,9 @@ public partial class AddTransacao : ContentPage
                 valido = false;
             }
         }
-        if (!valido)
+        if (valido == false)
         {
+            MensagemErro.IsVisible = true;
             MensagemErro.Text = msg.ToString();
         }
         return valido;
