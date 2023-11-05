@@ -1,10 +1,17 @@
+using AppControleFinanceiro.Repositorio;
+
 namespace AppControleFinanceiro.View;
 
 public partial class ListaDeTransacao : ContentPage
 {
-	public ListaDeTransacao()
+	IRepositorioDeTransacao _listaDeTransacao;
+	public ListaDeTransacao(IRepositorioDeTransacao listaDeTransacao)
 	{
+		this._listaDeTransacao = listaDeTransacao;
+		
 		InitializeComponent();
+
+		Lista.ItemsSource = _listaDeTransacao.PegarTudo();
 	}
 
 	private void IrParaAdicionarTransacao(object sender, EventArgs argumento)

@@ -1,12 +1,14 @@
-﻿namespace AppControleFinanceiro
+﻿using AppControleFinanceiro.Repositorio;
+
+namespace AppControleFinanceiro
 {
     public partial class App : Application
     {
-        public App()
+        public App(IRepositorioDeTransacao lista)
         {
             InitializeComponent();
-
-            MainPage = new NavigationPage(new View.ListaDeTransacao());
+            
+            MainPage = new NavigationPage(new View.ListaDeTransacao(lista));
         }
     }
 }

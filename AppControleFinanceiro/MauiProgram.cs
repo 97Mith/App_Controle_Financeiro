@@ -1,6 +1,7 @@
 ﻿using AppControleFinanceiro.Data;
 using AppControleFinanceiro.Models;
 using AppControleFinanceiro.Repositorio;
+using AppControleFinanceiro.View;
 using LiteDB;
 using Microsoft.Extensions.Logging;
 
@@ -40,5 +41,14 @@ namespace AppControleFinanceiro
             app.Services.AddTransient<IRepositorioDeTransacao, RepositorioDeTransacao>();
             return app;
         }
+        public static MauiAppBuilder RegistradorView(this MauiAppBuilder app)
+        {
+          
+            app.Services.AddTransient<ListaDeTransacao>();
+            app.Services.AddTransient<AddTransacao>();
+            app.Services.AddTransient<EdicaoDeTransacao>();
+            return app;
+        }
+
     }
 }

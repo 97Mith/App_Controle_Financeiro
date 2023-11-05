@@ -8,18 +8,25 @@
     NavigationPage.HasNavigationBar="False">
 
     <VerticalStackLayout>
-        <Grid Padding="15" ColumnDefinitions="50, *, Auto">
-            <Label Text="S" VerticalOptions="Center" HorizontalOptions="Center" FontSize="18"/>
-            <VerticalStackLayout Grid.Column="1">
-                <Label Text="Saldo"/>
-                <Label Text="dd/mm/aaaa" TextColor="#BABABA"/>
-            </VerticalStackLayout>
-            <Label Grid.Column="2" VerticalOptions="Center" Text="R$ 3.600,00" TextColor="DarkOliveGreen"/>
-        </Grid>
 
-       
-            
+        <CollectionView x:Name="Lista">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="15" ColumnDefinitions="50, *, Auto">
+                        <Label Text="S" VerticalOptions="Center" HorizontalOptions="Center" FontSize="18"/>
+                        <VerticalStackLayout Grid.Column="1">
+                            <Label Text="{Binding Nome}"/>
+                            <Label Text="{Binding Data, StringFormat='{0:dd/MM/yyyy}'}" TextColor="#BABABA"/>
+                        </VerticalStackLayout>
+                        <Label Grid.Column="2" VerticalOptions="Center" Text="{Binding Valor, StringFormat='{0:C}'}" TextColor="DarkOliveGreen"/>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
         <Button 
+            HorizontalOptions="Center"
+            CornerRadius="20"
             Text="Editar" 
             Clicked="IrParaEditarTransacao" />
 
