@@ -9,7 +9,7 @@ namespace AppControleFinanceiro.Models
     public class Transacao
     {
         public int Id { get; set; }
-        public TransacaoTipo Type { get; set; }
+        public TransacaoTipo Tipo { get; set; }
         public String Nome { get; set; }
         public DateTimeOffset Data { get; set; } //DateTimeOffset quarda a data e hora do lugar que ela estava
         public decimal Valor { get; set; }
@@ -17,7 +17,7 @@ namespace AppControleFinanceiro.Models
 
     public enum TransacaoTipo
     {
-        Income,
-        Expenses
+        Entrada,
+        Saida
     }
 }

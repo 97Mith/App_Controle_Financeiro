@@ -5,6 +5,9 @@
              Title="AddTransacao">
     <VerticalStackLayout Spacing="10">   
         <Border BackgroundColor="Black" Stroke="Transparent" Margin="15" Padding="15" StrokeShape="RoundRectangle 30">
+
+            <Label x:Name="MensagemErro" IsVisible="False" TextColor="Red" />
+            
             <Grid RowDefinitions="Auto" ColumnDefinitions="*, 30">
             <Label 
                 Text="Novo"
@@ -25,17 +28,37 @@
                 </Image>
             </Grid>
         </Border>
+        
         <Grid ColumnDefinitions="*, *" Margin="30,5">
-            <RadioButton  IsChecked="True" Content="Receita"/>
-            <RadioButton HorizontalOptions="End" Grid.Column="1" Content="Despesa"/>
+            <RadioButton  
+                x:Name="EntradaRdReceita"
+                IsChecked="True"
+                Content="Receita"/>
+            
+            <RadioButton 
+                x:Name="EntradaRdDespesa"
+                HorizontalOptions="End" 
+                Grid.Column="1" 
+                Content="Despesa"/>
         </Grid>
-        <Entry Placeholder="Nome" Margin="15"/>
-        <DatePicker Margin="15"/>
-        <Entry Placeholder="Valor" Margin="15"/>
+        
+        <Entry x:Name="EntradaNome" 
+               Placeholder="Nome" 
+               Margin="15"/>
+        
+        <DatePicker 
+            x:Name="EntradaData"
+            Margin="15"/>
+        
+        <Entry x:Name="EntradaValor" 
+               Placeholder="Valor" 
+               Margin="15"/>
+        
         <Button 
+            
             Text="SALVAR" 
             Margin="25" 
-            
+           
             FontAttributes="Bold"
             TextColor="Black"
             CornerRadius="22"

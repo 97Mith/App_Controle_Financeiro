@@ -25,14 +25,35 @@
                 </Image>
             </Grid>
         </Border>
+        
         <Grid ColumnDefinitions="*, *" Margin="30,5">
-            <RadioButton  IsChecked="True" Content="Receita"/>
-            <RadioButton HorizontalOptions="End" Grid.Column="1" Content="Despesa"/>
+            
+            <RadioButton  
+                x:Name="EdicRdEntrada"
+                IsChecked="True" 
+                Content="Receita"/>
+            
+            <RadioButton 
+                x:Name="EdicRdDespesa"
+                HorizontalOptions="End" 
+                Grid.Column="1" 
+                Content="Despesa"/>
+        
         </Grid>
-        <Entry Placeholder="Nome" Margin="15"/>
-        <DatePicker Margin="15"/>
-        <Entry Placeholder="Valor" Margin="15"/>
-        <Button 
+        <Entry 
+            x:Name="EdicNome"
+            Placeholder="Nome" 
+            Margin="15"/>
+        
+        <DatePicker 
+            x:Name="EdicData"
+            Margin="15"/>
+        
+        <Entry 
+            x:Name="EdicValor"
+            Placeholder="Valor" 
+            Margin="15"/>
+        <Button
             Text="SALVAR" 
             Margin="25" 
             
