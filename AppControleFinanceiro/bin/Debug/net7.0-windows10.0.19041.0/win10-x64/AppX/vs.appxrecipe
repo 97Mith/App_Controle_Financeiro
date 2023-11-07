@@ -30,29 +30,29 @@
     <AppXManifest Include="C:\Users\matht\source\repos\AppControleFinanceiro\AppControleFinanceiro\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-11-05T21:38:00.280</Modified>
+      <Modified>2023-11-07T14:50:27.065</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\matht\source\repos\AppControleFinanceiro\AppControleFinanceiro\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-11-05T21:34:33.531</Modified>
+      <Modified>2023-11-07T14:50:26.554</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matht\source\repos\AppControleFinanceiro\AppControleFinanceiro\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppControleFinanceiro.runtimeconfig.json">
       <PackagePath>AppControleFinanceiro.runtimeconfig.json</PackagePath>
-      <Modified>2023-11-01T14:33:11.441</Modified>
+      <Modified>2023-11-07T14:50:26.115</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matht\source\repos\AppControleFinanceiro\AppControleFinanceiro\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppControleFinanceiro.dll">
       <PackagePath>AppControleFinanceiro.dll</PackagePath>
-      <Modified>2023-11-05T21:37:58.727</Modified>
+      <Modified>2023-11-07T14:50:23.549</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matht\source\repos\AppControleFinanceiro\AppControleFinanceiro\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>AppControleFinanceiro.exe</PackagePath>
-      <Modified>2023-11-05T21:37:58.737</Modified>
+      <Modified>2023-11-07T14:50:23.588</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matht\source\repos\AppControleFinanceiro\AppControleFinanceiro\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppControleFinanceiro.deps.json">
       <PackagePath>AppControleFinanceiro.deps.json</PackagePath>
-      <Modified>2023-11-04T19:34:13.118</Modified>
+      <Modified>2023-11-07T14:50:25.894</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matht\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.13\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -809,6 +809,10 @@
     <AppxPackagedFile Include="C:\Users\matht\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.29\lib\net6.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
       <Modified>2023-06-09T20:10:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matht\.nuget\packages\communitytoolkit.mvvm\8.2.2\lib\net6.0\CommunityToolkit.Mvvm.dll">
+      <PackagePath>CommunityToolkit.Mvvm.dll</PackagePath>
+      <Modified>2023-10-24T20:16:06.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matht\.nuget\packages\litedb\5.0.17\lib\netstandard2.0\LiteDB.dll">
       <PackagePath>LiteDB.dll</PackagePath>

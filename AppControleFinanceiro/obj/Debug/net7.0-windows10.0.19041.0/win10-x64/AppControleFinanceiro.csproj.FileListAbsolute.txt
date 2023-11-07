@@ -309,3 +309,4 @@ C:\Users\matht\source\repos\AppControleFinanceiro\AppControleFinanceiro\obj\Debu
 C:\Users\matht\source\repos\AppControleFinanceiro\AppControleFinanceiro\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\close.scale-150.png
 C:\Users\matht\source\repos\AppControleFinanceiro\AppControleFinanceiro\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\close.scale-200.png
 C:\Users\matht\source\repos\AppControleFinanceiro\AppControleFinanceiro\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\close.scale-400.png
+C:\Users\matht\source\repos\AppControleFinanceiro\AppControleFinanceiro\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Mvvm.dll

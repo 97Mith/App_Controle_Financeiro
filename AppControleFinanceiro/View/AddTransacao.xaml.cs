@@ -1,5 +1,6 @@
 using AppControleFinanceiro.Models;
 using AppControleFinanceiro.Repositorio;
+using CommunityToolkit.Mvvm.Messaging;
 using System.Text;
 
 namespace AppControleFinanceiro.View;
@@ -19,7 +20,7 @@ public partial class AddTransacao : ContentPage
         SalvarDadosNoDataBase();
 
         Navigation.PopModalAsync();
-        
+        WeakReferenceMessenger.Default.Send<string>("");
         
     }
 

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "iLkJMVUZS2HJp1kVojEQinzo8BZHcc3mxOm1GdlB8vlptp8HWYaOavycFBJKKdLEe0Wi8UpqdmtlqaXwh966nQ==",
+  "dgSpecHash": "bex1//j4Vjh+xfWjio65kdgopUgTgfNql3sX/EM9Sl2V7RFlZ34qvGpwPuim3islVG+HSsgGrsdAryIo9JonHg==",
   "success": true,
   "projectFilePath": "C:\\Users\\matht\\source\\repos\\AppControleFinanceiro\\AppControleFinanceiro\\AppControleFinanceiro.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\matht\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512",
     "C:\\Users\\matht\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
     "C:\\Users\\matht\\.nuget\\packages\\litedb\\5.0.17\\litedb.5.0.17.nupkg.sha512",
     "C:\\Users\\matht\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.11\\microsoft.aspnetcore.authorization.7.0.11.nupkg.sha512",

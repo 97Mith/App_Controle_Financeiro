@@ -1,4 +1,5 @@
 using AppControleFinanceiro.Repositorio;
+using CommunityToolkit.Mvvm.Messaging;
 
 namespace AppControleFinanceiro.View;
 
@@ -11,8 +12,17 @@ public partial class ListaDeTransacao : ContentPage
 		
 		InitializeComponent();
 
-		Lista.ItemsSource = _listaDeTransacao.PegarTudo();
+		recarregar();
+		
+		WeakReferenceMessenger.Default.Register<string>(this, (e, msg)=>{
+			recarregar();
+		});
 	}
+
+	public void recarregar()
+	{
+        Lista.ItemsSource = _listaDeTransacao.PegarTudo();
+    }
 
 	private void IrParaAdicionarTransacao(object sender, EventArgs argumento)
 	{
@@ -22,6 +32,7 @@ public partial class ListaDeTransacao : ContentPage
 
     private void IrParaEditarTransacao(object sender, EventArgs e)
     {
-        Navigation.PushModalAsync(new EdicaoDeTransacao());
+		var editarTransacao = Handler.MauiContext.Services.GetService<EdicaoDeTransacao>();
+        Navigation.PushModalAsync(editarTransacao);
     }
 }
