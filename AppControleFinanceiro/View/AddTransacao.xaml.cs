@@ -20,6 +20,8 @@ public partial class AddTransacao : ContentPage
         SalvarDadosNoDataBase();
 
         Navigation.PopModalAsync();
+
+        //se for salvo ele envia uma mensagem que será usada para recarregar a pagina
         WeakReferenceMessenger.Default.Send<string>("");
         
     }

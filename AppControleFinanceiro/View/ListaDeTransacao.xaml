@@ -43,6 +43,7 @@
                     FontSize="18"
                     TextColor="#979797"/>
                 <Label 
+                    x:Name="Saldo"
                     Margin="10, 0"
                     Text="R$ 2760,00"
                     FontSize="36"
@@ -64,8 +65,10 @@
                        TextColor="#979797" 
                        Text="Receitas"
                        FontSize="8"/>
-                
-                <Label Grid.Row="4" 
+
+                <Label 
+                       x:Name="TotalReceita"
+                       Grid.Row="4" 
                        TextColor="White" 
                        Text="R$ 3.600,00"
                        FontSize="12"/>
@@ -77,6 +80,7 @@
                     Text="Despesas"
                     FontSize="8"/>
                 <Label 
+                    x:Name="TotalDespesas"
                     Grid.Row="4"
                     Grid.Column="1"
                     Text="R$ 840,00"

@@ -21,8 +21,18 @@ public partial class ListaDeTransacao : ContentPage
 
 	public void recarregar()
 	{
-        Lista.ItemsSource = _listaDeTransacao.PegarTudo();
-    }
+		var itens = _listaDeTransacao.PegarTudo();
+		Lista.ItemsSource = itens;
+
+		decimal receita = itens.Where(a => a.Tipo == Models.TransacaoTipo.Entrada).Sum(a => a.Valor);
+		decimal despesa = itens.Where(a => a.Tipo == Models.TransacaoTipo.Saida).Sum(a => a.Valor);
+		decimal balanco = receita - despesa;
+
+		TotalReceita.Text = receita.ToString("C");
+		TotalDespesas.Text = despesa.ToString("C");
+		Saldo.Text = balanco.ToString("C");
+
+	}
 
 	private void IrParaAdicionarTransacao(object sender, EventArgs argumento)
 	{
