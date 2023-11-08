@@ -760,6 +760,9 @@
     <AppxPackagedFile Include="C:\Users\matht\source\repos\AppControleFinanceiro\AppControleFinanceiro\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matht\source\repos\AppControleFinanceiro\AppControleFinanceiro\Resources\Images\trash.svg">
+      <PackagePath>Resources\Images\trash.svg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matht\source\repos\AppControleFinanceiro\AppControleFinanceiro\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\scopedcss\bundle\AppControleFinanceiro.styles.css">
       <PackagePath>wwwroot\AppControleFinanceiro.styles.css</PackagePath>
     </AppxPackagedFile>
@@ -852,6 +855,21 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matht\source\repos\AppControleFinanceiro\AppControleFinanceiro\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matht\source\repos\AppControleFinanceiro\AppControleFinanceiro\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\trash.scale-100.png">
+      <PackagePath>trash.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matht\source\repos\AppControleFinanceiro\AppControleFinanceiro\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\trash.scale-125.png">
+      <PackagePath>trash.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matht\source\repos\AppControleFinanceiro\AppControleFinanceiro\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\trash.scale-150.png">
+      <PackagePath>trash.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matht\source\repos\AppControleFinanceiro\AppControleFinanceiro\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\trash.scale-200.png">
+      <PackagePath>trash.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\matht\source\repos\AppControleFinanceiro\AppControleFinanceiro\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\trash.scale-400.png">
+      <PackagePath>trash.scale-400.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matht\source\repos\AppControleFinanceiro\AppControleFinanceiro\Shared\MainLayout.razor.css">
       <PackagePath>Shared\MainLayout.razor.css</PackagePath>

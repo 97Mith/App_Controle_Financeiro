@@ -50,6 +50,11 @@
 
     <ItemGroup>
       <None Remove="Resources\Images\close.svg" />
+      <None Remove="Resources\Raw\trash.svg" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <MauiAsset Include="Resources\Images\trash.svg" />
     </ItemGroup>
 
     <ItemGroup>

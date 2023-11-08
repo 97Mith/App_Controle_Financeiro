@@ -26,12 +26,12 @@
                         <Border
                             WidthRequest="30"
                             HeightRequest="30"
-                            BackgroundColor="LightBlue"
+                            BackgroundColor="LemonChiffon"
                             StrokeShape="RoundRectangle 20">
                             <Border.GestureRecognizers >
                                 <TapGestureRecognizer CommandParameter="{Binding}" Tapped="Deletar"/>
                             </Border.GestureRecognizers>
-                        <Label Text="X" Padding="4" Margin="4,0" FontSize="18"/>
+                            <Image Source="trash.png" WidthRequest="30" HeightRequest="30"/>
                         </Border>
                         <VerticalStackLayout Grid.Column="1">
                             <Label Text="{Binding Nome}"/>
