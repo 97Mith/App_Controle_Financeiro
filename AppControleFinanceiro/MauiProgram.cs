@@ -17,7 +17,8 @@ namespace AppControleFinanceiro
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-                }).Registrador_BD_Repositorio();
+                }).Registrador_BD_Repositorio()
+                  .RegistradorView();
             
             builder.Services.AddMauiBlazorWebView();
 
