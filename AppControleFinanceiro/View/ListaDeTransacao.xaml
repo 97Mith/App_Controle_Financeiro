@@ -3,10 +3,17 @@
     
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:converters="clr-namespace:AppControleFinanceiro.Libraries.Converters"
     x:Class="AppControleFinanceiro.View.ListaDeTransacao"
     Title="ListaDeTransacao"
     NavigationPage.HasNavigationBar="False">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:ConversorCorDaTransacao x:Key="CorConversor"/>
+            <converters:ConverterTransacao x:Key="SinalzinhoDeMenos"/>
 
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <VerticalStackLayout>
 
         <CollectionView x:Name="Lista">
@@ -16,12 +23,21 @@
                         <Grid.GestureRecognizers>
                             <TapGestureRecognizer CommandParameter="{Binding}" Tapped="TapGestureRecognizerTapped_To_TransactionEdit"/>
                         </Grid.GestureRecognizers>
-                        <Label Text="S" VerticalOptions="Center" HorizontalOptions="Center" FontSize="18"/>
+                        <Border
+                            WidthRequest="30"
+                            HeightRequest="30"
+                            BackgroundColor="LightBlue"
+                            StrokeShape="RoundRectangle 20">
+                            <Border.GestureRecognizers >
+                                <TapGestureRecognizer CommandParameter="{Binding}" Tapped="Deletar"/>
+                            </Border.GestureRecognizers>
+                        <Label Text="X" Padding="4" Margin="4,0" FontSize="18"/>
+                        </Border>
                         <VerticalStackLayout Grid.Column="1">
                             <Label Text="{Binding Nome}"/>
                             <Label Text="{Binding Data, StringFormat='{0:dd/MM/yyyy}'}" TextColor="#BABABA"/>
                         </VerticalStackLayout>
-                        <Label Grid.Column="2" VerticalOptions="Center" Text="{Binding Valor, StringFormat='{0:C}'}" TextColor="DarkOliveGreen"/>
+                        <Label Grid.Column="2" VerticalOptions="Center" Text="{Binding .,Converter={StaticResource SinalzinhoDeMenos}}" TextColor="{Binding .,Converter={StaticResource CorConversor}}"/>
                     </Grid>
                 </DataTemplate>
             </CollectionView.ItemTemplate>

@@ -42,7 +42,7 @@ namespace AppControleFinanceiro.Repositorio
         public void Deletar(Transacao transacao)
         {
             var col = _database.GetCollection<Transacao>(nomeTransacao);
-            col.Update(transacao);
+            col.Delete(transacao.Id);
         }
 
     }

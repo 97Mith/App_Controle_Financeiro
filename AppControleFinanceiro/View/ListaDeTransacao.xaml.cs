@@ -1,7 +1,7 @@
 using AppControleFinanceiro.Models;
 using AppControleFinanceiro.Repositorio;
 using CommunityToolkit.Mvvm.Messaging;
-using System.Transactions;
+
 
 namespace AppControleFinanceiro.View;
 
@@ -52,4 +52,17 @@ public partial class ListaDeTransacao : ContentPage
         transactionEdit.SetTransactionToEdit(transaction);
         Navigation.PushModalAsync(transactionEdit);
     }
+
+    private async void Deletar(object sender, TappedEventArgs e)
+    {
+		bool resultado = await App.Current.MainPage.DisplayAlert("Excluir!", "Tem certeza que deseja excluir a transação?", "Sim","Não");
+		
+		if (resultado)
+		{
+			Transacao transacao = (Transacao)e.Parameter;
+			_listaDeTransacao.Deletar(transacao);
+
+			recarregar();
+		}
+	}
 }
