@@ -1,13 +1,16 @@
 ﻿using AppControleFinanceiro.Models;
 using LiteDB;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Transactions;
 
 namespace AppControleFinanceiro.Repositorio
 {
+    
     public class RepositorioDeTransacao : IRepositorioDeTransacao
     {
         private readonly LiteDatabase _database;
@@ -30,10 +33,17 @@ namespace AppControleFinanceiro.Repositorio
             var col = _database.GetCollection<Transacao>(nomeTransacao);
             col.Insert(transacao);
         }
+
+        public void Update(Transacao transacao)
+        {
+            var col = _database.GetCollection<Transacao>(nomeTransacao);
+            col.Update(transacao);
+        }
         public void Deletar(Transacao transacao)
         {
             var col = _database.GetCollection<Transacao>(nomeTransacao);
             col.Update(transacao);
         }
+
     }
 }

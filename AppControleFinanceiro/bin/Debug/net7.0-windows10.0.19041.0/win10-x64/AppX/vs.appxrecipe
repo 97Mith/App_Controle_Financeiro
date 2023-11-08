@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\matht\source\repos\AppControleFinanceiro\AppControleFinanceiro\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-11-08T13:50:32.853</Modified>
+      <Modified>2023-11-08T14:53:39.245</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\matht\source\repos\AppControleFinanceiro\AppControleFinanceiro\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-11-08T13:48:29.804</Modified>
+      <Modified>2023-11-08T14:53:38.864</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matht\source\repos\AppControleFinanceiro\AppControleFinanceiro\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppControleFinanceiro.runtimeconfig.json">
       <PackagePath>AppControleFinanceiro.runtimeconfig.json</PackagePath>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matht\source\repos\AppControleFinanceiro\AppControleFinanceiro\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppControleFinanceiro.dll">
       <PackagePath>AppControleFinanceiro.dll</PackagePath>
-      <Modified>2023-11-08T13:50:31.325</Modified>
+      <Modified>2023-11-08T14:53:37.591</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matht\source\repos\AppControleFinanceiro\AppControleFinanceiro\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>AppControleFinanceiro.exe</PackagePath>
-      <Modified>2023-11-08T13:50:31.335</Modified>
+      <Modified>2023-11-08T14:53:37.602</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\matht\source\repos\AppControleFinanceiro\AppControleFinanceiro\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppControleFinanceiro.deps.json">
       <PackagePath>AppControleFinanceiro.deps.json</PackagePath>

@@ -63,5 +63,7 @@
             Padding="30,10"
             HorizontalOptions="Center"
             Clicked="SalvarVoltar"/>
+
+        <Label x:Name="MensagemErro" Margin="30" IsVisible="False" TextColor="Red" />
     </VerticalStackLayout>
 </ContentPage>
