@@ -55,6 +55,7 @@ public partial class ListaDeTransacao : ContentPage
 
     private async void Deletar(object sender, TappedEventArgs e)
     {
+		await AnimacaoX((Border)sender, true);
 		bool resultado = await App.Current.MainPage.DisplayAlert("Excluir!", "Tem certeza que deseja excluir a transação?", "Sim","Não");
 		
 		if (resultado)
@@ -64,5 +65,24 @@ public partial class ListaDeTransacao : ContentPage
 
 			recarregar();
 		}
+		else
+		{
+            await AnimacaoX((Border)sender, false);
+        }
+	}
+	private async Task AnimacaoX(Border borda, bool confirmar)
+	{
+		if(confirmar)
+		{
+			await borda.RotateYTo(180, 500);
+			borda.BackgroundColor = Colors.Red;
+
+			
+		}
+		else
+		{
+			await borda.RotateYTo(-180, 500);
+            borda.BackgroundColor = Colors.LemonChiffon;
+        }
 	}
 }

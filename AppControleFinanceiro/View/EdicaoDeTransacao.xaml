@@ -47,6 +47,7 @@
         
         <DatePicker 
             x:Name="EdicData"
+            Format="dd/MM/yyyy"
             Margin="15"/>
         
         <Entry 

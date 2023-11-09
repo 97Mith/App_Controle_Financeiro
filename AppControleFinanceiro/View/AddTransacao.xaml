@@ -45,6 +45,7 @@
         
         <DatePicker 
             x:Name="EntradaData"
+            Format="dd/MM/yyyy"
             Margin="15"/>
         
         <Entry x:Name="EntradaValor" 
