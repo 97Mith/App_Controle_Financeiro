@@ -65,13 +65,14 @@
                     Grid.Row="1"/>
                 <Button 
                     Text="+" 
-                    FontSize="48"
+                    FontSize="{OnPlatform Default=48, Android=36}"
                     WidthRequest="54"
                     HeightRequest="54"
                     Grid.Column="1" 
                     Grid.RowSpan="2"
                     CornerRadius="30"
                     HorizontalOptions="Center"
+                    Padding="{OnPlatform Android=2}"
                     
                     Clicked="IrParaAdicionarTransacao" />
 

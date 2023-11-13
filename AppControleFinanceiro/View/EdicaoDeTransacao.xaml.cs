@@ -87,7 +87,7 @@ public partial class EdicaoDeTransacao : ContentPage
             Tipo = EdicRdEntrada.IsChecked ? TransacaoTipo.Entrada : TransacaoTipo.Saida,
             Nome = EdicNome.Text,
             Data = EdicData.Date,
-            Valor = decimal.Parse(EdicValor.Text)
+            Valor = Math.Abs(decimal.Parse(EdicValor.Text))
         };
 
         var _repositorio = this.Handler.MauiContext.Services.GetService<IRepositorioDeTransacao>();

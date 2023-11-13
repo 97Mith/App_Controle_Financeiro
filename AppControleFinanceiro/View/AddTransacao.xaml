@@ -29,11 +29,13 @@
         <Grid ColumnDefinitions="*, *" Margin="30,5">
             <RadioButton  
                 x:Name="EntradaRdReceita"
+                BackgroundColor="Transparent"
                 IsChecked="True"
                 Content="Receita"/>
             
             <RadioButton 
                 x:Name="EntradaRdDespesa"
+                BackgroundColor="Transparent"
                 HorizontalOptions="End" 
                 Grid.Column="1" 
                 Content="Despesa"/>

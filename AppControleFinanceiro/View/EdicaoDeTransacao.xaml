@@ -31,11 +31,13 @@
             <RadioButton  
                 x:Name="EdicRdEntrada"
                 IsChecked="True" 
+                BackgroundColor="Transparent"
                 Content="Receita"/>
             
             <RadioButton 
                 x:Name="EdicRdDespesa"
                 HorizontalOptions="End" 
+                BackgroundColor="Transparent"
                 Grid.Column="1" 
                 Content="Despesa"/>
         

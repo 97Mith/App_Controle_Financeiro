@@ -33,7 +33,7 @@ public partial class AddTransacao : ContentPage
             Tipo = EntradaRdReceita.IsChecked ? TransacaoTipo.Entrada : TransacaoTipo.Saida,
             Nome = EntradaNome.Text,
             Data = EntradaData.Date,
-            Valor = decimal.Parse(EntradaValor.Text)
+            Valor = Math.Abs(decimal.Parse(EntradaValor.Text))
         };
 
         var _repositorio = this.Handler.MauiContext.Services.GetService<IRepositorioDeTransacao>();

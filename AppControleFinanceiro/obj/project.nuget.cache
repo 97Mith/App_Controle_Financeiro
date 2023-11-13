@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bex1//j4Vjh+xfWjio65kdgopUgTgfNql3sX/EM9Sl2V7RFlZ34qvGpwPuim3islVG+HSsgGrsdAryIo9JonHg==",
+  "dgSpecHash": "TpbEzZKLIrSN8Y5RBVSi7PhrZ52/EPpHNNzLhD6G7AjKMLQIbJKaWnGgud82ow2F3rI3mSMWauIraDqCbdc25Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\matht\\source\\repos\\AppControleFinanceiro\\AppControleFinanceiro\\AppControleFinanceiro.csproj",
   "expectedPackageFiles": [
@@ -122,6 +122,7 @@
     "C:\\Users\\matht\\.nuget\\packages\\xamarin.kotlin.stdlib.jdk8\\1.7.20.1\\xamarin.kotlin.stdlib.jdk8.1.7.20.1.nupkg.sha512",
     "C:\\Users\\matht\\.nuget\\packages\\xamarin.kotlinx.coroutines.android\\1.6.4.1\\xamarin.kotlinx.coroutines.android.1.6.4.1.nupkg.sha512",
     "C:\\Users\\matht\\.nuget\\packages\\xamarin.kotlinx.coroutines.core.jvm\\1.6.4.1\\xamarin.kotlinx.coroutines.core.jvm.1.6.4.1.nupkg.sha512",
+    "C:\\Users\\matht\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\7.0.13\\microsoft.netcore.app.crossgen2.win-x64.7.0.13.nupkg.sha512",
     "C:\\Users\\matht\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.29\\microsoft.windows.sdk.net.ref.10.0.19041.29.nupkg.sha512",
     "C:\\Users\\matht\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\7.0.13\\microsoft.aspnetcore.app.runtime.win-x64.7.0.13.nupkg.sha512",
     "C:\\Users\\matht\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\7.0.13\\microsoft.windowsdesktop.app.runtime.win-x64.7.0.13.nupkg.sha512",

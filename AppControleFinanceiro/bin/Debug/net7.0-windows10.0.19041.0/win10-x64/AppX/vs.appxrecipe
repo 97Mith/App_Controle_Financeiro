@@ -30,7 +30,7 @@
     <AppXManifest Include="C:\Users\matht\source\repos\AppControleFinanceiro\AppControleFinanceiro\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-11-09T18:07:39.668</Modified>
+      <Modified>2023-11-13T14:57:53.589</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
