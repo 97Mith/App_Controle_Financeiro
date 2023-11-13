@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Archive>
+  <Name>Controle Financeiro</Name>
+  <PackageName>com.github_97mith.appcontrolefinanceiro</PackageName>
+  <PackageVersionCode>1</PackageVersionCode>
+  <PackageVersionName>1.0</PackageVersionName>
+  <PackageFormat>aab</PackageFormat>
+  <CreationDate>638354927557054683</CreationDate>
+  <SolutionName>AppControleFinanceiro</SolutionName>
+  <SolutionPath>C:\Users\matht\source\repos\AppControleFinanceiro\AppControleFinanceiro.sln</SolutionPath>
+  <Status></Status>
+  <MinSdkVersion>24</MinSdkVersion>
+  <Configuration>
+    <DebugMode>false</DebugMode>
+  </Configuration>
+</Archive>
